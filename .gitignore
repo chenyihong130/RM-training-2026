@@ -1,0 +1,9 @@
+*.o
+*.out
+*.exe
+*.cmake
+CMakeFiles/
+Makefile
+
+# VS Code 配置文件
+.vscode/
