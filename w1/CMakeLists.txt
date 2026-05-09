@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.22.1)
 project(hello1)
 add_executable(hello 问候.cpp)
-
+set(CMAKE_CXX_STANDARD 11)
+if(CMAKE_CXX_COMPILER_ID MATCHES"^(GUN|Clang)$")
+    target_compile_options(hello PRIVATE -Wall -Wextra)
+endif()
