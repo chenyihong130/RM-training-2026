@@ -34,7 +34,7 @@ error: 无法推送一些引用到 'http://github.com/chenyihong130/RM-training-
 提示：（如 'git pull ...'）。
 提示：详见 'git push --help' 中的 'Note about fast-forwards' 小节。
 ```
-重新克隆完后可以提交
+pull完再push
 ###
 在vscode中改完代码但是依旧显示错误应为忘了用ctri+s更新到文件导致g++编译的是未更改的文件
 ### 未解决
