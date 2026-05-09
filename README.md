@@ -1,7 +1,22 @@
 # RM-training-2026
 >培训统一验收仓库
 ## w1
-###
+### 提交内容
+- 开发环境：g++ --version 截图、cmake --version 截图、hello world 终端运行截图
+- Git：wx发给组长个人仓库链接；
+- C++ 基础：至少 2-3 段体现不同语法点的示例代码
+- 命令行小程序：main.cpp、CMakeLists.txt
+### 完成内容
+- 配置了开发环境
+- 用cmake编译了命令行问候小程序
+- 学习了基础的C++编程语言
+- 学习了用git记录
+### 提交内容
+- g++的版本截图
+- cmake的版本截图
+- 命令问候代码
+- 
+### 问题
 把github中的仓库到本地后对github中仓库进行改动使得云端与本地时间线不统一导致无法push
 ```bash
 training-2026.git main
