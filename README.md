@@ -14,8 +14,13 @@
 ### 提交内容
 - g++的版本截图
 - cmake的版本截图
+- cmake编译过程
 - 命令问候代码
-- 
+- 命令循环问候代码
+- 计算随机数组中偶数个数
+- 输出结构体中成绩最好的
+- CMakeLists.txt
+- hello world 终端运行截图
 ### 问题
 把github中的仓库到本地后对github中仓库进行改动使得云端与本地时间线不统一导致无法push
 ```bash
@@ -32,5 +37,7 @@ error: 无法推送一些引用到 'http://github.com/chenyihong130/RM-training-
 重新克隆完后可以提交
 ###
 在vscode中改完代码但是依旧显示错误应为忘了用ctri+s更新到文件导致g++编译的是未更改的文件
+### 未解决
+- opencv 还未安装
 ## w2
 ## w3
