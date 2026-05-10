@@ -38,7 +38,9 @@ pull完再push
 ###
 在vscode中改完代码但是依旧显示错误应为忘了用ctri+s更新到文件导致g++编译的是未更改的文件
 ### cmake使用
+#### 让Cmake生成编译规则&make编译出可执行文件
 ![让Cmake生成编译规则&make编译出可执行文件](https://github.com/chenyihong130/RM-training-2026/blob/main/w1/%E6%88%AA%E5%9B%BE%202026-05-10%2010-27-17.png)
+#### 执行结果
 ![执行结果](https://github.com/chenyihong130/RM-training-2026/blob/main/w1/%E6%88%AA%E5%9B%BE%202026-05-10%2010-27-29.png)
 ### 未解决
 - opencv 还未安装
