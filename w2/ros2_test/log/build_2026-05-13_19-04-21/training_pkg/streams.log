@@ -1,0 +1,112 @@
+[0.005s] Invoking command in '/home/chenyihong/桌面/w2/ros2_test/build/training_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chenyihong/桌面/w2/ros2_test/build/training_pkg -- -j20 -l20
+[0.034s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[0.040s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[0.047s] [ 75%] Built target listener
+[1.123s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:7:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_msgs[m[K’?
+[1.124s]     7 |         rclcpp::Publisher<[01;31m[Kstd_msg[m[K::msg::Sting>SharedPtr pub_;
+[1.124s]       |                           [01;31m[K^~~~~~~[m[K
+[1.124s]       |                           [32m[Kstd_msgs[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:7:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.124s]     7 |         rclcpp::Publisher<std_msg::msg::Sting[01;31m[K>[m[KSharedPtr pub_;
+[1.124s]       |                                              [01;31m[K^[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:7:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.124s]     7 |         rclcpp::Publisher<std_msg::msg::Sting>[01;31m[KSharedPtr[m[K pub_;
+[1.124s]       |                                               [01;31m[K^~~~~~~~~[m[K
+[1.124s]       |                                                        [32m[K;[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:7:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ does not name a type
+[1.124s]     7 |         rclcpp::Publisher<std_msg::msg::Sting>SharedPtr [01;31m[Kpub_[m[K;
+[1.124s]       |                                                         [01;31m[K^~~~[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:8:17:[m[K [01;31m[Kerror: [m[K‘[01m[KTimeBase[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type; did you mean ‘[01m[KTimerBase[m[K’?
+[1.124s]     8 |         rclcpp::[01;31m[KTimeBase[m[K::SharedPtr time_;
+[1.124s]       |                 [01;31m[K^~~~~~~~[m[K
+[1.124s]       |                 [32m[KTimerBase[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:17:19:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kstring[m[K’
+[1.124s]    17 |         Talker[34m[K([m[Kstd[01;31m[K [m[K[32m[Kstring[m[K name):Node(name)
+[1.124s]       |               [34m[K~[m[K   [01;31m[K^[m[K[32m[K~~~~~~[m[K
+[1.124s]       |                   [32m[K)[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:22:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[1.124s]    22 | }
+[1.124s]       |  [01;31m[K^[m[K
+[1.124s]       |  [32m[K;[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:[m[K In member function ‘[01m[Kvoid Talker::callback()[m[K’:
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:11:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ has not been declared
+[1.124s]    11 |             [01;31m[Kstd_msg[m[K::msg::String msg;
+[1.124s]       |             [01;31m[K^~~~~~~[m[K
+[1.124s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:12:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[1.124s]    12 |             [01;31m[Kmsg[m[K.data="hello ros2";
+[1.125s]       |             [01;31m[K^~~[m[K
+[1.125s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:12:13:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[1.125s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[1.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[1.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[1.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:33[m[K,
+[1.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[1.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[1.125s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.126s]                  from [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:1[m[K:
+[1.126s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[1.126s]    28 | namespace [01;36m[Kmsg[m[K
+[1.126s]       |           [01;36m[K^~~[m[K
+[1.126s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.126s]                  from [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:1[m[K:
+[1.126s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[1.126s]    28 | namespace [01;36m[Kmsg[m[K
+[1.126s]       |           [01;36m[K^~~[m[K
+[1.126s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:24[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[1.126s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.126s]                  from [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:1[m[K:
+[1.126s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[1.126s]    28 | namespace [01;36m[Kmsg[m[K
+[1.126s]       |           [01;36m[K^~~[m[K
+[1.126s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[1.126s]                  from [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:2[m[K:
+[1.126s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:28:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[1.127s]    28 | namespace [01;36m[Kmsg[m[K
+[1.127s]       |           [01;36m[K^~~[m[K
+[1.128s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:13:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+[1.128s]    13 |             [01;31m[Kpub_[m[K->publish(msg);
+[1.128s]       |             [01;31m[K^~~~[m[K
+[1.128s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:[m[K At global scope:
+[1.128s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:23:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[1.128s]    23 | int main[34m[K([m[Kint argc[01;31m[K;[m[Kchar**argv)
+[1.128s]       |         [34m[K~[m[K        [01;31m[K^[m[K
+[1.128s]       |                  [32m[K)[m[K
+[1.128s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:23:5:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint main(int)[m[K’ takes only zero or two arguments [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+[1.128s]    23 | int [01;35m[Kmain[m[K(int argc;char**argv)
+[1.128s]       |     [01;35m[K^~~~[m[K
+[1.128s] [01m[K/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/src/talker.cpp:23:29:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K)[m[K’ token
+[1.128s]    23 | int main(int argc;char**argv[01;31m[K)[m[K
+[1.128s]       |                             [01;31m[K^[m[K
+[1.332s] gmake[2]: *** [CMakeFiles/talker.dir/build.make:76：CMakeFiles/talker.dir/src/talker.cpp.o] 错误 1
+[1.332s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/talker.dir/all] 错误 2
+[1.332s] gmake: *** [Makefile:146：all] 错误 2
+[1.334s] Invoked command in '/home/chenyihong/桌面/w2/ros2_test/build/training_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chenyihong/桌面/w2/ros2_test/build/training_pkg -- -j20 -l20

@@ -1,0 +1,72 @@
+[0.005s] Invoking command in '/home/chenyihong/桌面/w2/ros2_test/build/training_pkg': /usr/bin/cmake /home/chenyihong/桌面/w2/ros2_test/src/training_pkg -DCMAKE_INSTALL_PREFIX=/home/chenyihong/桌面/w2/ros2_test/install/training_pkg
+[0.043s] -- The C compiler identification is GNU 11.4.0
+[0.076s] -- The CXX compiler identification is GNU 11.4.0
+[0.080s] -- Detecting C compiler ABI info
+[0.124s] -- Detecting C compiler ABI info - done
+[0.128s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.128s] -- Detecting C compile features
+[0.128s] -- Detecting C compile features - done
+[0.130s] -- Detecting CXX compiler ABI info
+[0.176s] -- Detecting CXX compiler ABI info - done
+[0.180s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.180s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.182s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.270s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.316s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.334s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.336s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.340s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.345s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.352s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.372s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.373s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.421s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.434s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.460s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.466s] -- Looking for pthread.h
+[0.514s] -- Looking for pthread.h - found
+[0.514s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.559s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.560s] -- Found Threads: TRUE  
+[0.616s] Error parsing '/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/package.xml':
+[0.638s] Traceback (most recent call last):
+[0.639s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.639s]     root = dom.parseString(data)
+[0.639s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 1995, in parseString
+[0.639s]     return expatbuilder.parseString(string)
+[0.639s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[0.639s]     return builder.parseString(string)
+[0.639s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[0.639s]     parser.Parse(string, True)
+[0.639s] xml.parsers.expat.ExpatError: no element found: line 1, column 0
+[0.639s] 
+[0.639s] During handling of the above exception, another exception occurred:
+[0.639s] 
+[0.639s] Traceback (most recent call last):
+[0.639s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.639s]     main()
+[0.639s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.639s]     raise e
+[0.639s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.639s]     package = parse_package_string(
+[0.639s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.639s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.639s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/package.xml':
+[0.639s] The manifest contains invalid XML:
+[0.639s] no element found: line 1, column 0
+[0.646s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.646s]   execute_process(/usr/bin/python3
+[0.646s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.646s]   /home/chenyihong/桌面/w2/ros2_test/src/training_pkg/package.xml
+[0.646s]   /home/chenyihong/桌面/w2/ros2_test/build/training_pkg/ament_cmake_core/package.cmake)
+[0.646s]   returned error code 1
+[0.646s] Call Stack (most recent call first):
+[0.646s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.646s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[0.646s]   CMakeLists.txt:30 (ament_package)
+[0.646s] 
+[0.646s] [0m
+[0.646s] -- Configuring incomplete, errors occurred!
+[0.646s] See also "/home/chenyihong/桌面/w2/ros2_test/build/training_pkg/CMakeFiles/CMakeOutput.log".
+[0.651s] Invoked command in '/home/chenyihong/桌面/w2/ros2_test/build/training_pkg' returned '1': /usr/bin/cmake /home/chenyihong/桌面/w2/ros2_test/src/training_pkg -DCMAKE_INSTALL_PREFIX=/home/chenyihong/桌面/w2/ros2_test/install/training_pkg
