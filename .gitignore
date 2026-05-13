@@ -4,6 +4,9 @@
 *.cmake
 CMakeFiles/
 Makefile
+build/
+install/
+log/
 
 # VS Code 配置文件
 .vscode/
