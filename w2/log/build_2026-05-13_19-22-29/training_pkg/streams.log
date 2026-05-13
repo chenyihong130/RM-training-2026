@@ -1,0 +1,58 @@
+[0.006s] Invoking command in '/home/chenyihong/桌面/w2/build/training_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chenyihong/桌面/w2/ros2_test/src/training_pkg -DCMAKE_INSTALL_PREFIX=/home/chenyihong/桌面/w2/install/training_pkg
+[0.044s] -- The C compiler identification is GNU 11.4.0
+[0.077s] -- The CXX compiler identification is GNU 11.4.0
+[0.081s] -- Detecting C compiler ABI info
+[0.126s] -- Detecting C compiler ABI info - done
+[0.130s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.130s] -- Detecting C compile features
+[0.130s] -- Detecting C compile features - done
+[0.132s] -- Detecting CXX compiler ABI info
+[0.179s] -- Detecting CXX compiler ABI info - done
+[0.183s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.183s] -- Detecting CXX compile features
+[0.183s] -- Detecting CXX compile features - done
+[0.184s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.280s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.326s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.347s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.350s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.355s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.362s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.370s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.390s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.391s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.442s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.458s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.482s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.486s] -- Looking for pthread.h
+[0.535s] -- Looking for pthread.h - found
+[0.536s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.589s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.590s] -- Found Threads: TRUE  
+[0.649s] -- Configuring done
+[0.655s] -- Generating done
+[0.657s] -- Build files have been written to: /home/chenyihong/桌面/w2/build/training_pkg
+[0.662s] Invoked command in '/home/chenyihong/桌面/w2/build/training_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chenyihong/桌面/w2/ros2_test/src/training_pkg -DCMAKE_INSTALL_PREFIX=/home/chenyihong/桌面/w2/install/training_pkg
+[0.664s] Invoking command in '/home/chenyihong/桌面/w2/build/training_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chenyihong/桌面/w2/build/training_pkg -- -j20 -l20
+[0.700s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/talker.cpp.o[0m
+[0.701s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[2.819s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[2.918s] [ 75%] Built target talker
+[4.690s] [100%] [32m[1mLinking CXX executable listener[0m
+[4.881s] [100%] Built target listener
+[4.887s] Invoked command in '/home/chenyihong/桌面/w2/build/training_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chenyihong/桌面/w2/build/training_pkg -- -j20 -l20
+[4.895s] Invoking command in '/home/chenyihong/桌面/w2/build/training_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chenyihong/桌面/w2/build/training_pkg
+[4.900s] -- Install configuration: ""
+[4.900s] -- Installing: /home/chenyihong/桌面/w2/install/training_pkg/lib/training_pkg/talker
+[4.900s] -- Set runtime path of "/home/chenyihong/桌面/w2/install/training_pkg/lib/training_pkg/talker" to ""
+[4.900s] -- Installing: /home/chenyihong/桌面/w2/install/training_pkg/lib/training_pkg/listener
+[4.902s] -- Set runtime path of "/home/chenyihong/桌面/w2/install/training_pkg/lib/training_pkg/listener" to ""
+[4.902s] -- Installing: /home/chenyihong/桌面/w2/install/training_pkg/share/training_pkg/launch
+[4.902s] -- Installing: /home/chenyihong/桌面/w2/install/training_pkg/share/training_pkg/launch/talk_listen.launch.py
+[4.902s] [31mCMake Error at cmake_install.cmake:86 (file):
+[4.902s]   file INSTALL cannot find
+[4.902s]   "/home/chenyihong/桌面/w2/ros2_test/src/training_pkg/params": No such
+[4.902s]   file or directory.
+[4.902s] 
+[4.902s] [0m
+[4.903s] Invoked command in '/home/chenyihong/桌面/w2/build/training_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chenyihong/桌面/w2/build/training_pkg
