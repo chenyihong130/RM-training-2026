@@ -1,6 +1,8 @@
 # RM-training-2026
 >培训统一验收仓库
+[w1](##w1)   [w2](##w2)
 ## w1
+<a id="w1"></a>
 ### 提交内容
 - 开发环境：g++ --version 截图、cmake --version 截图、hello world 终端运行截图
 - Git：wx发给组长个人仓库链接；
