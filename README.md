@@ -47,4 +47,64 @@ pull完再push
 ### 未解决
 - opencv 还未安装
 ## w2
+<a id="w2"></a>
+### 提交内容
+- 环境接入与基础概念：turtlesim运行截图；ros2 topic list / echo / info截图
+- 基础通信与 launch / 参数：training_pkg代码；colcon build成功截图；talker / listener同时运行截图；launch启动截图；参数生效截图
+- bag 调试：ros2 bag info截图；README.md写清你是怎么录制、回放和观察自己话题的
+- 给参数补默认值和范围说明
+- 把参数写进YAML由launch加载
+- 录了一个bag并由bag play复现
+### 完成内容
+-配置了ros2的开发环境
+-了解了ros2中的基础概念
+-创建了工作空间和节点
+-学会了用launch同时启动两个节点
+-学了bag录制与复现
+### 提交内容
+-turtlesim运行截图
+-ros2 topic list / echo / info截图
+-training_pkg代码
+-colcon build成功截图
+-talker / listener同时运行截图
+-launch启动截图
+-ros2 bag info截图
+-给参数补默认值和范围说明
+-把参数写进YAML由launch加载
+-录了一个bag并由bag play复现
+### 要求说明
+#### workspace
+ros2工程的根目录，包含src/install/log/build
+#### package
+ros2中的基本单位，包含代码，声明，配置
+#### node
+ros2中的独立进程，依靠话题通信
+#### topic
+机电间单向传输的通道，topic一致才可以传输
+#### bag
+用ros2 bag record录制了/chatter话题数据
+用ros2 bag play回放
+用ros2 bag info查看bag文件信息
+### 问题
+#### 1.
+ros2 run 提示 Package not found
+原因：
+工作空间没有执行 source install/setup.bash，ROS2 找不到编译后的包。
+新开的终端不会继承 VS Code 终端的环境变量，必须重新 source。
+解决：
+cd ~/桌面/w2/ros2_test
+source install/setup.bash
+ros2 run training_pkg talker
+#### 2.
+YAML 参数文件加载失败
+原因：
+CMakeLists.txt 没有添加 install(DIRECTORY params ...)，参数文件没被复制到 install 目录。
+launch.py 里的路径拼接错误，或 YAML 里的节点名和代码里的不一致（必须完全匹配）。
+解决：
+在 CMakeLists.txt 中添加安装规则
+install(DIRECTORY launch params DESTINATION share/${PROJECT_NAME})
+### 未解决
+可完成录制、回放操作，但不懂bag存储数据的底层原理
+不会自主分析bag文件信息、话题时长、消息数量
+回放后无法独立排查收不到话题数据的问题
 ## w3
