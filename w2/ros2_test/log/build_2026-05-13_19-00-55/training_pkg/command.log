@@ -1,2 +1,0 @@
-Invoking command in '/home/chenyihong/桌面/w2/ros2_test/build/training_pkg': /usr/bin/cmake /home/chenyihong/桌面/w2/ros2_test/src/training_pkg -DCMAKE_INSTALL_PREFIX=/home/chenyihong/桌面/w2/ros2_test/install/training_pkg
-Invoked command in '/home/chenyihong/桌面/w2/ros2_test/build/training_pkg' returned '1': /usr/bin/cmake /home/chenyihong/桌面/w2/ros2_test/src/training_pkg -DCMAKE_INSTALL_PREFIX=/home/chenyihong/桌面/w2/ros2_test/install/training_pkg

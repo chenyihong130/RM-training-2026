@@ -1,3 +1,0 @@
-talker:
-  ros__parameters:
-    talk_msg: "RM战队ROS2实验完成"
